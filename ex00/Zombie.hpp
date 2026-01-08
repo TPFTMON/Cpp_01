@@ -3,17 +3,21 @@
 
 # include <string>
 # include <iostream>
-// # include <sstream>
 
 class Zombie{
 
 private:
-    std::string _name;
+    std::string _Name;
 
 public:
     Zombie(std::string name);
     ~Zombie();
-    void announce(void);
+    void Announce(void);
 };
+
+
+// Zombie functions:
+void    randomChump(std::string name);
+Zombie* newZombie(std::string name);
 
 #endif
