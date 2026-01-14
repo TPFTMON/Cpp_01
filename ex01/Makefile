@@ -1,6 +1,6 @@
-NAME		:= hordeOfZombies
+NAME		:= hordeOfzombies
 
-SRCS		:= main.cpp Zombie.cpp zombieHorde
+SRCS		:= main.cpp Zombie.cpp zombieHorde.cpp
 
 OBJ_DIR		:= obj
 

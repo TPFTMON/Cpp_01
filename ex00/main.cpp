@@ -1,16 +1,19 @@
 #include "Zombie.hpp"
 
-
-int main(/*int argc, char const *argv[]*/)
+int main()
 {
-    Zombie zombie = Zombie("Fred");
-    zombie.Announce();
+    Zombie zombie("Fred");
+    zombie.announce();
+
 
     Zombie *Bob = newZombie("Bob");
-    Bob->Announce();
+    Bob->announce();
     delete Bob;
 
     randomChump("Greg");
 
     return (0);
 }
+
+    // Zombie zombie = Zombie("Fred");
+    // zombie.announce();
