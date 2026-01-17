@@ -4,14 +4,18 @@ int main()
 {
     int               N = 13;
     const std::string name = "Alfred";
-    Zombie           *zombies = zombieHorde(N, name);
+    Zombie            *zombies = zombieHorde(N, name);
+    if (!zombies){
+        std::cout << "Stop doing negatives and 0. Thanks.\n";
+        return (1);
+    }
 
     for (int i = 0; i < N; i++){
         std::cout << "Zombie " << i + 1 << ":\n";
         zombies[i].announce();
     }
 
-    std::cout << "+++++++++++++++++++++++++++NEW NAMES+++++++++++++++++++++++++++++++:\n";
+    std::cout << "\n+++++++++++++++++++++++++++NEW NAMES+++++++++++++++++++++++++++++++:\n";
     zombies[1].setName("Bfred");
     zombies[2].setName("Cfred");
     zombies[3].setName("Dfred");
@@ -31,7 +35,6 @@ int main()
     }
 
     delete[] zombies;
-
     return (0);
 }
 
