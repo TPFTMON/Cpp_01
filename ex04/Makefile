@@ -1,6 +1,6 @@
-NAME		:= Sed
+NAME		:= sed
 
-SRCS		:= main.cpp
+SRCS		:= main.cpp sed.cpp
 
 OBJ_DIR		:= obj
 
