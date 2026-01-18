@@ -9,8 +9,8 @@ int main(int argc, char const *argv[])
     }
 
     std::string fileName = argv[1], toReplace = argv[2], replacement = argv[3], fileText;
-
     std::ofstream outputFile;
+
     if (manage_files(fileName, fileText, outputFile) != OKI)
         return (FAIL);
 
